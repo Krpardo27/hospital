@@ -1,4 +1,4 @@
-# Project Title
+# Ejercicio práctico 1
 
 Ejercicio Práctico: Desarrollo de la Página Web de
 un Hospital
