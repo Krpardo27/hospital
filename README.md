@@ -48,8 +48,8 @@ maquetado, pero no requiere funcionalidad backend.
 - Mapa de ubicación: Un mapa estático que muestre la ubicación del hospital.
 - Pie de página: Igual al de las otras vistas.
 4. Consideraciones Semánticas y de Accesibilidad - 1 Punto
-- Usa correctamente las etiquetas semánticas de HTML5 (<header>, <nav>,
-<section>, <article>, <footer> etc.).
+- Usa correctamente las etiquetas semánticas de HTML5 (header, nav,
+section, article, footer, etc.).
 - El diseño debe ser responsivo y adaptable a diferentes tamaños de pantalla.
 - El sitio debe ser accesible, utilizando atributos alt en las imágenes, etiquetas de
 formularios correctamente asociadas a sus campos, y un diseño que permita la
