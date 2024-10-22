@@ -11,19 +11,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <!-- <link rel="stylesheet" href="css/styles.css" /> -->
+    <link rel="stylesheet" href="assets/css/styles.css">
   </head>
   <body>
     <header id="header">
       <div class="header-interior">
-        <img src="img/logo.png" alt="Logo del Hospital" id="logo" />
-        <h1 class="titulo">Hospital Valle de Salud</h1>
+        <img src="../assets/img/logo.png" alt="Logo del Hospital" id="logo" />
+        <h1 class="titulo">Hospital del Corazón</h1>
         <nav class="navegacion">
           <ul>
-            <li><a href="#inicio">Home</a></li>
-            <li><a href="#equipo-medico">Equipo Médico</a></li>
-            <li><a href="#servicios">Servicios</a></li>
-            <li><a href="#contacto">Contacto</a></li>
+            <li><a href="/">Home</a></li>
+            <li><a href="pages/equipo-medico.html">Nuestro Equipo Médico</a></li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
           </ul>
         </nav>
 
@@ -47,7 +46,7 @@
           </p>
         </article>
 
-        <aside>hola</aside>
+        <aside class="resumen">hola</aside>
       </div>
 
       <section id="nuestro-equipo ">
@@ -64,7 +63,10 @@
         <h2>Servicios Médicos del Hospital del Corazón</h2>
 
         <div class="servicios">
-          <img src="img/servicios/cardiologia.png" alt="Ícono de consulta" />
+          <img
+            src="../assets/img/servicios/cardiologia.png"
+            alt="Consultas Cardiológicas"
+          />
           <h3>Consultas Cardiológicas</h3>
           <p>
             Ofrecemos consultas especializadas con cardiólogos experimentados
@@ -75,8 +77,8 @@
 
         <div class="servicios">
           <img
-            src="img/servicios/medicina-urgencia.jpg"
-            alt="Ícono de urgencias"
+            src="../assets/img/servicios/medicina-urgencia.jpg"
+            alt="Urgencias Cardiovasculares"
           />
           <h3>Urgencias Cardiovasculares</h3>
           <p>
@@ -88,8 +90,8 @@
 
         <div class="servicios">
           <img
-            src="img/servicios/servicio-cardiologia.jpg"
-            alt="Ícono de especialidades"
+            src="../assets/img/servicios/servicio-cardiologia.jpg"
+            alt="Especialidades en Cardiología"
           />
           <h3>Especialidades en Cardiología</h3>
           <p>
@@ -146,10 +148,8 @@
       <div class="footer-content">
         <h3>Hospital del Corazón</h3>
         <ul class="enlaces">
-          <li><a href="#servicios">Servicios</a></li>
-          <li><a href="#testimonios">Testimonios</a></li>
-          <li><a href="#contacto">Contacto</a></li>
-          <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+          <li><a href="pages/equipo-medico.html">Nuestro Equipo Médico</a></li>
+          <li><a href="pages/contacto.html">Contacto</a></li>
         </ul>
 
         <div class="contact-info">
@@ -171,11 +171,12 @@
             >Instagram</a
           >
         </div>
+        <div class="footer-bottom">
+          <p>&copy; 2024 Hospital del Corazón - Todos los derechos reservados.</p>
+        </div>
       </div>
 
-      <div class="footer-bottom">
-        <p>&copy; 2024 Hospital del Corazón - Todos los derechos reservados.</p>
-      </div>
+     
     </footer>
   </body>
 </html>
