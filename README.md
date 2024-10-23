@@ -13,7 +13,7 @@ Para visualizar el proyecto en un navegador, sigue estos pasos:
 3. Abre el archivo `index.html` en tu navegador preferido. Puedes hacerlo haciendo doble clic en el archivo o arrastrándolo a la ventana del navegador.
 
 ## Estructura de Carpetas y Archivos
-/proyecto │ ├── index.html # Página principal de la aplicación ├── /css # Carpeta que contiene estilos CSS │ └── styles.css # Archivo de estilos │ ├── /js # Carpeta que contiene scripts JavaScript │ └── scripts.js # Archivo de scripts │ └── /img # Carpeta que contiene imágenes └── logo.png # Logo de la aplicación
+/proyecto │ ├── index.html # Página principal de la aplicación ├── assets/css # Carpeta que contiene estilos CSS │ └── styles.css # Archivo de estilos │ ├── assets/js # Carpeta que contiene scripts JavaScript │ └── scripts.js # Archivo de scripts │ └── assets/img # Carpeta que contiene imágenes └── logo.png # Logo de la aplicación
 
 ## Explicación Breve de Cada Vista
 
