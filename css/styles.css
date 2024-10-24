@@ -1,95 +1,43 @@
-/* Estilos del header */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  background-color: #f4f4f4;
-}
-
-main {
-  width: 1152px;
-  margin: 0 auto;
-  padding: 20px 0;
-}
-article {
-  flex: 3;
-  padding: 20px;
-  background: white;
-  margin-right: 20px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-aside {
-  flex: 1;
-  background: #e2e2e2;
-  padding: 20px;
-  
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-#header {
-  width: 1152px;
+header {
+  width: 1200px;
   max-width: 100%;
   margin: 0 auto;
 }
-#header .header-interior {
+header .header__logo a {
   display: flex;
-  justify-content: space-around;
+  align-items: center;
+  gap: 20px;
+  text-decoration: none;
+}
+header .header__logo a img {
+  width: 100px;
+  max-width: 100%;
+  height: auto;
+}
+header .header__logo a h1 {
+  font-size: 32px;
+  text-wrap: balance;
+}
+header .header__interior {
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
   height: 100px;
   gap: 10px;
 }
-#header .header-interior img {
-  width: 80px;
-  max-width: 100%;
-}
-#header .header-interior .titulo {
-  font-size: 28px;
-  text-transform: uppercase;
-  width: 500px;
-  line-height: 30px;
-  margin: 0 20px;
-}
-
-#header .header-interior button {
-  background-color: A8D8E8;
-  padding: 5px 10px;
-  width: 300px;
-  font-size: 16px;
-}
-
-#header .navegacion {
-  width: 100%;
+header .header__interior .navegacion__enlaces {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  gap: 10px;
+  justify-content: space-between;
+  padding: 10px 0;
 }
-
-#header .navegacion ul {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 50px;
-  padding: 10px;
-  width: 100%;
-}
-
-#header .navegacion ul li {
+header .header__interior .navegacion__enlaces li {
   list-style: none;
-  font-size: 16px;
-  text-transform: uppercase;
 }
-
-#header .navegacion ul li a {
+header .header__interior .navegacion__enlaces li a {
   text-decoration: none;
+  font-size: 22px;
 }
 
-#inicio h2 {
-  font-size: 24px;
-}
-
-#main .bienvenida {
-  display: flex;
-}
+/*# sourceMappingURL=styles.css.map */
