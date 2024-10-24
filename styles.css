@@ -1,0 +1,12 @@
+.header__interior {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 20px;
+  height: 100px;
+  gap: 10px;
+}
+
+
+
+/*# sourceMappingURL=styles.css.map */

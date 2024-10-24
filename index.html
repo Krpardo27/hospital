@@ -11,193 +11,131 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header id="header">
-      <div class="header-interior">
-        <a href="/"
-          ><img
-            src="../assets/img/logo.png"
-            alt="Logo del Hospital"
-            id="logo"
-          />
-          <h1 class="titulo">Hospital del Corazón</h1></a
-        >
-
+    <header>
+      <div class="header__interior">
+        <div class="header__logo">
+          <a href="/">
+            <img src="img/logo.png" alt="Logo del Hospital" id="logo" />
+            <h1>Hospital del Corazón</h1></a
+          >
+        </div>
         <nav class="navegacion">
-          <ul>
-            <li><a href="/">Home</a></li>
-            <li>
-              <a href="pages/equipo-medico.html">Nuestro Equipo Médico</a>
-            </li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
+          <ul class="navegacion__enlaces">
+            <li><a href="#inicio">Home</a></li>
+            <li><a href="#sobre-mi">Equipo Médico</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
         </nav>
 
-        <button type="button">Reservar cita</button>
+        <button>Reservar cita</button>
       </div>
     </header>
 
     <main id="main">
-      <div class="container">
-        <div class="bienvenida">
-          <article>
-            <h2>Bienvenida</h2>
-            <p>
-              ¡Bienvenidos al Hospital del Corazón! Nos enorgullece ser un centro
-              de excelencia en salud cardiovascular, dedicado a proporcionar
-              atención integral y de calidad. Nuestra misión es cuidar y mejorar
-              la salud de nuestros pacientes, ofreciendo tratamientos innovadores
-              y un enfoque humano. Visualizamos un futuro donde cada corazón
-              recibe la atención que merece, promoviendo bienestar y calidad de
-              vida. Gracias por elegirnos para acompañarte en tu camino hacia la
-              salud.
-            </p>
-          </article>
-  
-          <aside class="resumen">hola</aside>
-        </div>
-        
-
-        <section id="nuestro-equipo ">
-          <h2>Sobre nuestro equipo</h2>
+      <div class="bienvenida">
+        <article>
+          <h2>Bienvenida</h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas velit
-            odio eum? Sint ipsa consequatur, repudiandae nemo vel officia
-            consectetur, pariatur, dignissimos totam obcaecati molestias magni!
-            Eos sit illum enim..
+            ¡Bienvenidos al Hospital del Corazón! Nos enorgullece ser un centro
+            de excelencia en salud cardiovascular, dedicado a proporcionar
+            atención integral y de calidad. Nuestra misión es cuidar y mejorar
+            la salud de nuestros pacientes, ofreciendo tratamientos innovadores
+            y un enfoque humano. Visualizamos un futuro donde cada corazón
+            recibe la atención que merece, promoviendo bienestar y calidad de
+            vida. Gracias por elegirnos para acompañarte en tu camino hacia la
+            salud.
           </p>
-        </section>
+        </article>
 
-        <section id="servicios">
-          <h2>Servicios Médicos del Hospital del Corazón</h2>
-
-          <div class="servicios">
-            <img
-              src="../assets/img/servicios/cardiologia.png"
-              alt="Consultas Cardiológicas"
-            />
-            <div class="info-servicio">
-              <h3>Consultas Cardiológicas</h3>
-              <p>
-                Ofrecemos consultas especializadas con cardiólogos
-                experimentados que evaluarán tu salud cardiovascular, realizarán
-                diagnósticos precisos y diseñarán planes de tratamiento
-                personalizados.
-              </p>
-            </div>
-          </div>
-
-          <div class="servicios">
-            <div class="info-servicio">
-              <h3>Urgencias Cardiovasculares</h3>
-              <p>
-                Nuestro servicio de urgencias está disponible las 24 horas,
-                brindando atención inmediata y de alta calidad para situaciones
-                críticas relacionadas con la salud del corazón.
-              </p>
-            </div>
-            <img
-              src="../assets/img/servicios/medicina-urgencia.jpg"
-              alt="Urgencias Cardiovasculares"
-            />
-          </div>
-
-          <div class="servicios">
-            <img
-              src="../assets/img/servicios/servicio-cardiologia.jpg"
-              alt="Especialidades en Cardiología"
-            />
-            <div class="interior-servicio">
-              <h3>Especialidades en Cardiología</h3>
-              <p>
-                Contamos con diversas especialidades, incluyendo
-                electrocardiografía, ecocardiografía y rehabilitación cardíaca,
-                para abordar de manera integral las necesidades de cada
-                paciente.
-              </p>
-            </div>
-          </div>
-        </section>
-
-        <section id="testimonios">
-          <h2>Testimonios de Pacientes</h2>
-
-          <div class="testimonios">
-            <p><strong>María G.</strong></p>
-            <p>
-              "La atención en el Hospital del Corazón fue excepcional. Desde mi
-              primera consulta hasta la rehabilitación, me sentí apoyada en cada
-              paso. Gracias a su equipo, hoy disfruto de una vida más
-              saludable."
-            </p>
-          </div>
-
-          <div class="testimonios">
-            <p><strong>José L.</strong></p>
-            <p>
-              "No puedo agradecer lo suficiente al personal del hospital. Su
-              profesionalismo y dedicación me dieron la confianza que necesitaba
-              durante mi tratamiento. Me siento como nuevo y listo para seguir
-              adelante."
-            </p>
-          </div>
-
-          <div class="testimonios">
-            <p><strong>Ana R.</strong></p>
-            <p>
-              "El Hospital del Corazón superó mis expectativas. La atención
-              personalizada y el seguimiento constante hicieron toda la
-              diferencia en mi recuperación. ¡Altamente recomendado!"
-            </p>
-          </div>
-
-          <div class="testimonios">
-            <p><strong>Carlos T.</strong></p>
-            <p>
-              "Tuve una experiencia increíble. El equipo médico no solo es
-              competente, sino también muy empático. Me ayudaron a entender mi
-              condición y a tomar decisiones informadas sobre mi salud."
-            </p>
-          </div>
-        </section>
+        <aside>hola</aside>
       </div>
+
+      <section>
+        <h2>Sobre nuestro equipo</h2>
+        <p>Aquí puedes poner información sobre ti.</p>
+      </section>
+
+      <section>
+        <h2>Servicios Médicos del Hospital del Corazón</h2>
+
+        <div class="servicios">
+          <img src="URL_DEL_ICONO" alt="Ícono de consulta" />
+          <h3>Consultas Cardiológicas</h3>
+          <p>
+            Ofrecemos consultas especializadas con cardiólogos experimentados
+            que evaluarán tu salud cardiovascular, realizarán diagnósticos
+            precisos y diseñarán planes de tratamiento personalizados.
+          </p>
+        </div>
+
+        <div class="servicios">
+          <img src="URL_DEL_ICONO" alt="Ícono de urgencias" />
+          <h3>Urgencias Cardiovasculares</h3>
+          <p>
+            Nuestro servicio de urgencias está disponible las 24 horas,
+            brindando atención inmediata y de alta calidad para situaciones
+            críticas relacionadas con la salud del corazón.
+          </p>
+        </div>
+
+        <div class="servicios">
+          <img src="URL_DEL_ICONO" alt="Ícono de especialidades" />
+          <h3>Especialidades en Cardiología</h3>
+          <p>
+            Contamos con diversas especialidades, incluyendo
+            electrocardiografía, ecocardiografía y rehabilitación cardíaca, para
+            abordar de manera integral las necesidades de cada paciente.
+          </p>
+        </div>
+      </section>
+
+      <section id="testimonios">
+        <h2>Testimonios de Pacientes</h2>
+
+        <div class="testimonios">
+          <p><strong>María G.</strong></p>
+          <p>
+            "La atención en el Hospital del Corazón fue excepcional. Desde mi
+            primera consulta hasta la rehabilitación, me sentí apoyada en cada
+            paso. Gracias a su equipo, hoy disfruto de una vida más saludable."
+          </p>
+        </div>
+
+        <div class="testimonios">
+          <p><strong>José L.</strong></p>
+          <p>
+            "No puedo agradecer lo suficiente al personal del hospital. Su
+            profesionalismo y dedicación me dieron la confianza que necesitaba
+            durante mi tratamiento. Me siento como nuevo y listo para seguir
+            adelante."
+          </p>
+        </div>
+
+        <div class="testimonios">
+          <p><strong>Ana R.</strong></p>
+          <p>
+            "El Hospital del Corazón superó mis expectativas. La atención
+            personalizada y el seguimiento constante hicieron toda la diferencia
+            en mi recuperación. ¡Altamente recomendado!"
+          </p>
+        </div>
+
+        <div class="testimonios">
+          <p><strong>Carlos T.</strong></p>
+          <p>
+            "Tuve una experiencia increíble. El equipo médico no solo es
+            competente, sino también muy empático. Me ayudaron a entender mi
+            condición y a tomar decisiones informadas sobre mi salud."
+          </p>
+        </div>
+      </section>
     </main>
 
-    <footer id="footer">
-      <div class="footer-content">
-        <h3>Hospital del Corazón</h3>
-        <ul class="enlaces">
-          <li><a href="pages/equipo-medico.html">Nuestro Equipo Médico</a></li>
-          <li><a href="pages/contacto.html">Contacto</a></li>
-        </ul>
-
-        <div class="contact-info">
-          <h4>Contacto</h4>
-          <p>Teléfono: (123) 456-7890</p>
-          <p>Email: contacto@hospitalcorazon.com</p>
-          <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
-        </div>
-
-        <div class="social-media">
-          <h4>Síguenos</h4>
-          <a href="https://www.facebook.com/hospitalcorazon" target="_blank"
-            >Facebook</a
-          >
-          <a href="https://www.twitter.com/hospitalcorazon" target="_blank"
-            >Twitter</a
-          >
-          <a href="https://www.instagram.com/hospitalcorazon" target="_blank"
-            >Instagram</a
-          >
-        </div>
-        <div class="footer-bottom">
-          <p>
-            &copy; 2024 Hospital del Corazón - Todos los derechos reservados.
-          </p>
-        </div>
-      </div>
+    <footer>
+      <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
     </footer>
   </body>
 </html>
