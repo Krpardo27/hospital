@@ -18,7 +18,7 @@
   }
 }
 .button:hover {
-  background-color: rgb(0, 98.4, 204);
+  background-color: #0062cc;
   transform: translateY(-2px);
 }
 .button:active {
@@ -56,7 +56,7 @@
   transition: transform 0.3s ease;
 }
 .navegacion a:hover {
-  color: rgb(0, 86.1, 178.5);
+  color: #0056b3;
 }
 .navegacion a:hover::after {
   transform: scaleX(1);
@@ -218,6 +218,4 @@ header .header__interior .navegacion__enlaces li a {
   .container .servicios .servicios__infor .servicios__detalles {
     flex-direction: column;
   }
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=main.css.map */

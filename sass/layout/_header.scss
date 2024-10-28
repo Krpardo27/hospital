@@ -1,9 +1,24 @@
+@import "../abstracts/mixins";
+
 header {
-  width: 1200px;
-  max-width: 100%;
-  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  padding: 10px;
+  transition:
+    box-shadow 0.3s,
+    border 0.3s;
+  z-index: 1000;
+  border-bottom: 2px solid #ccc; // Cambia a border-bottom o ajusta según necesites
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 
   .header__logo {
+    @include tablet() {
+      display: flex;
+      flex-direction: column;
+    }
     a {
       display: flex;
       align-items: center;
@@ -14,25 +29,65 @@ header {
         width: 100px;
         max-width: 100%;
         height: auto;
+
+        @include tablet() {
+          width: 80px;
+        }
+
+        @include mobile() {
+          width: 50px;
+        }
       }
 
       h1 {
         font-size: 32px;
         text-wrap: balance;
+
+        @include tablet() {
+          font-size: 24px;
+        }
+
+        @include mobile() {
+          font-size: 16px;
+        }
       }
     }
   }
 
   .header__interior {
+    margin: 0 auto;
+    width: 1200px;
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    height: 100px;
+    padding: 10px;
+    height: 90px;
     gap: 10px;
+
+    @include tablet() {
+      height: 70px;
+      width: 100%;
+      padding: 20px;
+    }
+
+    @include mobile() {
+      height: 50px;
+    }
 
     .navegacion {
       &__enlaces {
+        @include laptop() {
+          display: flex;
+        }
+        @include tablet() {
+          display: none;
+        }
+
+        @include mobile(){
+          display: none;
+        }
+
         display: flex;
         gap: 10px;
         justify-content: space-between;
@@ -42,10 +97,11 @@ header {
 
           a {
             text-decoration: none;
-            font-size: 22px;
+            font-size: 21px;
           }
         }
       }
     }
   }
 }
+

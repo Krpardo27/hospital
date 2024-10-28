@@ -1,0 +1,42 @@
+$primary-color: #007bff; // Color principal
+$hover-color: darken($primary-color, 15%);
+$underline-color: $primary-color;
+
+// NAV
+
+.navegacion {
+  list-style: none; // Eliminar puntos de la lista
+  padding: 0;
+  margin: 0;
+  display: flex; // Para alinear los enlaces en fila
+
+  li {
+    margin-right: 20px; // Espaciado entre enlaces
+  }
+
+  a {
+    text-decoration: none; // Sin subrayado
+    color: #333; // Color del texto
+    position: relative; // Para el pseudo-elemento
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: -4px; // Ajusta la posición de la barra
+      height: 2px; // Altura de la barra
+      background-color: $underline-color;
+      transform: scaleX(0); // Inicialmente no visible
+      transition: transform 0.3s ease; // Efecto de transición
+    }
+
+    &:hover {
+      color: $hover-color; // Cambiar color al pasar el ratón
+
+      &::after {
+        transform: scaleX(1); // Mostrar la barra al hacer hover
+      }
+    }
+  }
+}
