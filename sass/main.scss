@@ -1,18 +1,19 @@
-@import "abstracts/mixins";
-@import "base/variables";
+@use "abstracts/mixins";
+@use "base/variables";
+@use 'modules/base';
 
 // COMPONENTS
-@import "components/buttonCita";
+@use "components/buttonCita";
 
 // VARIABLES
-@import "components/navegacion";
+@use "components/navegacion";
 
 // LAYOUTS
-@import "layout/header";
-@import "layout/footer";
-@import "layout/container";
+@use "layout/header";
+@use "layout/footer";
+@use "layout/container";
 
 // PAGES
-@import "pages/home";
-@import "pages/equipo-medico";
-@import "pages/contacto";
+@use "pages/home";
+@use "pages/equipo-medico";
+@use "pages/contacto";

@@ -1,19 +1,47 @@
 @import "../abstracts/mixins";
 @import "../layout/container";
 
-.container__bienvenida {
+.bienvenida {
   display: flex;
   gap: 20px;
 
-  @include tablet() {
-    aside {
+  .bienvenida__encabezado {
+    .bienvenida__titulo {
+      font-size: 36px;
+      text-transform: uppercase;
+      border-bottom: 2px solid #007bff;
+
+      @include mobile() {
+        font-size: 26px;
+      }
+    }
+  }
+
+  .bienvenida__aside {
+    @include tablet() {
+      display: none;
+    }
+
+    @include mobile() {
       display: none;
     }
   }
 }
 
-h2 {
-  font-size: 32px;
+.nuestro-equipo {
+  .nuestro-equipo__titulo {
+    font-size: 36px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #007bff;
+  }
+
+  .nuestro-equipo__infor {
+    font-size: 21px;
+  }
+}
+
+.servicios__titulo {
+  font-size: 36px;
   text-transform: uppercase;
   border-bottom: 2px solid #007bff;
 }
@@ -62,6 +90,28 @@ h2 {
       @include tablet() {
         flex-direction: column;
       }
+    }
+  }
+}
+
+.testimonios__titulo {
+  font-size: 36px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #007bff;
+}
+
+.testimonios {
+  display: flex;
+  padding: 10px;
+
+  @include mobile() {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .testimonios__infor {
+    @include mobile() {
+      flex-wrap: nowrap;
     }
   }
 }
