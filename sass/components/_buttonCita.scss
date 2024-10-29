@@ -1,9 +1,4 @@
-// _buttons.scss
 @import '../abstracts/mixins';
-
-$primary-color: #007BFF;  
-$hover-color: darken($primary-color, 10%);
-$disabled-color: #ccc;
 
 .button {
     display: inline-block;
@@ -13,18 +8,14 @@ $disabled-color: #ccc;
     text-align: center;
     text-decoration: none;
     color: #fff;
-    background-color: $primary-color;
+    background-color: aquamarine;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s, transform 0.2s;
 
-    @include mobile() {
-      font-size: 13px;
-    }
-
     &:hover {
-        background-color: $hover-color;
+        
         transform: translateY(-2px);
     }
 
@@ -33,7 +24,7 @@ $disabled-color: #ccc;
     }
 
     &.disabled {
-        background-color: $disabled-color;
+        
         cursor: not-allowed;
         opacity: 0.6;
     }

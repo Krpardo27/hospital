@@ -1,0 +1,38 @@
+
+$primary-color: #007bff;
+$secondary-color: #f8f9fa;
+$text-color: #333;
+$font-stack: "Poppins", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-stack;
+  font-size: 16px;
+  color: $text-color;
+  line-height: 1.5;
+  background-color: $secondary-color;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: darken($primary-color, 10%); // Oscurece el color al pasar el ratón
+  }
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+
+section {
+
+}

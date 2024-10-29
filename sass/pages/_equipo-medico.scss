@@ -1,0 +1,41 @@
+@import '../abstracts/mixins';
+
+.equipo {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include mobile() {
+    margin: 100px 0 0;
+  }
+
+  .equipo__card {
+    display: flex;
+    gap: 20px;
+
+    @include mobile() {
+      flex-direction: column;
+    }
+    
+
+    img {
+      width: 300px;
+      max-width: 100%;
+      object-fit: cover;
+
+      @include mobile() {
+        width: 100%;
+      }
+    }
+    
+    .equipo__infor {
+      max-width: 100%;
+      margin: 0;
+
+      @include mobile() {
+        margin: 0px;
+      }
+    }
+  }
+}

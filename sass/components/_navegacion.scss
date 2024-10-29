@@ -5,37 +5,37 @@ $underline-color: $primary-color;
 // NAV
 
 .navegacion {
-  list-style: none; // Eliminar puntos de la lista
+  list-style: none;
   padding: 0;
   margin: 0;
-  display: flex; // Para alinear los enlaces en fila
+  display: flex;
 
   li {
-    margin-right: 20px; // Espaciado entre enlaces
+    margin-right: 20px;
   }
 
   a {
-    text-decoration: none; // Sin subrayado
-    color: #333; // Color del texto
-    position: relative; // Para el pseudo-elemento
+    text-decoration: none;
+    color: #333;
+    position: relative;
 
     &::after {
       content: "";
       position: absolute;
       left: 0;
       right: 0;
-      bottom: -4px; // Ajusta la posición de la barra
-      height: 2px; // Altura de la barra
+      bottom: -4px;
+      height: 2px;
       background-color: $underline-color;
-      transform: scaleX(0); // Inicialmente no visible
-      transition: transform 0.3s ease; // Efecto de transición
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
     }
 
     &:hover {
-      color: $hover-color; // Cambiar color al pasar el ratón
+      color: $hover-color;
 
       &::after {
-        transform: scaleX(1); // Mostrar la barra al hacer hover
+        transform: scaleX(1);
       }
     }
   }

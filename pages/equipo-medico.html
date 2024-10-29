@@ -10,7 +10,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../style.css" />
     <title>Equipo Médico</title>
   </head>
   <body>
@@ -18,7 +18,11 @@
       <div class="header__interior">
         <div class="header__logo">
           <a href="/">
-            <img src="../assets/img/logo.png" alt="Logo del Hospital" id="logo" />
+            <img
+              src="../assets/img/logo.png"
+              alt="Logo del Hospital"
+              id="logo"
+            />
             <h1>Hospital del Corazón</h1></a
           >
         </div>
@@ -34,8 +38,8 @@
       </div>
     </header>
 
-    <div id="equipo-medico">
-      <div class="container">
+    <div class="container">
+      <div class="equipo">
         <h1>Equipo Médico</h1>
         <section>
           <p>
@@ -46,12 +50,12 @@
             vanguardia y un enfoque integral en la salud cardiovascular.
           </p>
         </section>
-        <div class="card">
+        <div class="equipo__card">
           <img
             src="../assets/img/equipo-medico/equipo-1.jpg"
             alt="Dr. Juan Pérez"
           />
-          <div class="info">
+          <div class="equipo__infor">
             <h3>Dr. Juan Pérez</h3>
             <p><strong>Especialidad:</strong> Cardiología</p>
             <p>
@@ -63,12 +67,12 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="equipo__card">
           <img
             src="../assets/img/equipo-medico/equipo-2.jpg"
             alt="Dra. María López"
           />
-          <div class="info">
+          <div class="equipo__infor">
             <h3>Dra. María López</h3>
             <p><strong>Especialidad:</strong> Cirugía Cardiovascular</p>
             <p>
@@ -80,12 +84,12 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="equipo__card">
           <img
             src="../assets/img/equipo-medico/equipo-3.jpg"
             alt="Dr. Carlos Sánchez"
           />
-          <div class="info">
+          <div class="equipo__infor">
             <h3>Dra. Ana Torres</h3>
             <p><strong>Especialidad:</strong> Medicina Interna</p>
             <p>
@@ -97,12 +101,12 @@
           </div>
         </div>
 
-        <div class="card">
+        <div class="equipo__card">
           <img
             src="../assets/img/equipo-medico/equipo-4.jpg"
             alt="Dra. Ana Torres"
           />
-          <div class="info">
+          <div class="equipo__infor">
             <h3>Dr. Carlos Sánchez</h3>
             <p><strong>Especialidad:</strong> Electrofisiología</p>
             <p>
@@ -117,22 +121,26 @@
       </div>
     </div>
 
-    <footer id="footer">
-      <div class="footer-content">
+    <footer>
+      <div class="footer__content">
         <h3>Hospital del Corazón</h3>
-        <ul class="enlaces">
-          <li><a href="pages/equipo-medico.html">Nuestro Equipo Médico</a></li>
-          <li><a href="pages/contacto.html">Contacto</a></li>
-        </ul>
+        <div class="footer__logo">
+          <ul class="footer__enlaces">
+            <li>
+              <a href="pages/equipo-medico.html">Nuestro Equipo Médico</a>
+            </li>
+            <li><a href="pages/contacto.html">Contacto</a></li>
+          </ul>
+        </div>
 
-        <div class="contact-info">
+        <div class="footer__contact-info">
           <h4>Contacto</h4>
           <p>Teléfono: (123) 456-7890</p>
           <p>Email: contacto@hospitalcorazon.com</p>
           <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
         </div>
 
-        <div class="social-media">
+        <div class="footer__social-media">
           <h4>Síguenos</h4>
           <a href="https://www.facebook.com/hospitalcorazon" target="_blank"
             >Facebook</a
@@ -145,8 +153,7 @@
           >
         </div>
       </div>
-
-      <div class="footer-bottom">
+      <div class="footer__footer-bottom">
         <p>&copy; 2024 Hospital del Corazón - Todos los derechos reservados.</p>
       </div>
     </footer>
