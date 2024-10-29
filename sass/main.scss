@@ -1,16 +1,18 @@
-@import 'abstracts/mixins';
-@import 'base/variables';
+@import "abstracts/mixins";
+@import "base/variables";
 
 // COMPONENTS
-@import 'components/buttonCita';
+@import "components/buttonCita";
 
 // VARIABLES
-@import 'components/navegacion';
+@import "components/navegacion";
 
 // LAYOUTS
-@import 'layout/header';
-@import 'layout/container';
+@import "layout/header";
+@import "layout/footer";
+@import "layout/container";
 
 // PAGES
-@import 'pages/home';
-
+@import "pages/home";
+@import "pages/equipo-medico";
+@import "pages/contacto";
