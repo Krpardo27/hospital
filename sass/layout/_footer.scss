@@ -2,12 +2,6 @@
 @import '../modules/base';
 
 .footer__content {
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
-  width: 1200px;
-  margin: 0 auto;
-  gap: 10px;
   padding: 10px;
 
   @include mobile() {
@@ -62,7 +56,6 @@
 
 .footer__footer-bottom {
   text-align: center;
-  margin-top: 20px;
   font-size: 14px;
   padding: 20px 0;
   p {
