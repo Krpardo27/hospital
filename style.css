@@ -101,7 +101,7 @@ header .header__logo a {
   text-decoration: none;
 }
 header .header__logo a img {
-  width: 100px;
+  width: 70px;
   max-width: 100%;
   height: auto;
 }
@@ -133,8 +133,7 @@ header .header__interior {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  height: 90px;
+  height: 70px;
   gap: 10px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -150,6 +149,7 @@ header .header__interior {
   }
 }
 header .header__interior .navegacion__enlaces {
+  margin: 0;
   display: flex;
   gap: 10px;
   justify-content: space-between;
@@ -357,7 +357,7 @@ h2 {
 
 @media (min-width: 1200px) {
   section {
-    padding: 50px 0;
+    padding: 50px 0 0;
   }
 }
 @media (max-width: 767px) {
@@ -366,12 +366,6 @@ h2 {
   }
 }
 
-.equipo {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 @media (max-width: 767px) {
   .equipo {
     margin: 100px 0 0;
@@ -399,6 +393,9 @@ h2 {
 .equipo .equipo__card .equipo__infor {
   max-width: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 @media (max-width: 767px) {
   .equipo .equipo__card .equipo__infor {
