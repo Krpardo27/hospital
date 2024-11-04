@@ -12,7 +12,7 @@ a {
   transition: color 0.3s ease;
 }
 a:hover {
-  color: rgb(0, 98.4, 204);
+  color: #0062cc;
 }
 
 h2 {
@@ -70,7 +70,7 @@ h2 {
   transition: transform 0.3s ease;
 }
 .navegacion a:hover {
-  color: rgb(0, 86.1, 178.5);
+  color: #0056b3;
 }
 .navegacion a:hover::after {
   transform: scaleX(1);
@@ -192,7 +192,7 @@ a {
   transition: color 0.3s ease;
 }
 a:hover {
-  color: rgb(0, 98.4, 204);
+  color: #0062cc;
 }
 
 h2 {
@@ -482,4 +482,4 @@ h2 {
   cursor: not-allowed;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

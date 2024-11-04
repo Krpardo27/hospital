@@ -1,22 +1,22 @@
 $enable-grid-classes: false;
 $enable-cssgrid: true;
 
-@use "abstracts/mixins";
-@use "base/variables";
-@use 'modules/base';
+@import "abstracts/mixins";
+@import "base/variables";
+@import 'modules/base';
 
 // COMPONENTS
-@use "components/buttonCita";
+@import "components/buttonCita";
 
 // VARIABLES
-@use "components/navegacion";
+@import "components/navegacion";
 
 // LAYOUTS
-@use "layout/header";
-@use "layout/footer";
-@use "layout/container";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/container";
 
 // PAGES
-@use "pages/home";
-@use "pages/equipo-medico";
-@use "pages/contacto";
+@import "pages/home";
+@import "pages/equipo-medico";
+@import "pages/contacto";
