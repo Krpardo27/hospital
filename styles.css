@@ -1,9 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -18,7 +12,7 @@ a {
   transition: color 0.3s ease;
 }
 a:hover {
-  color: rgb(0, 98.4, 204);
+  color: #0062cc;
 }
 
 h2 {
@@ -76,7 +70,7 @@ h2 {
   transition: transform 0.3s ease;
 }
 .navegacion a:hover {
-  color: rgb(0, 86.1, 178.5);
+  color: #0056b3;
 }
 .navegacion a:hover::after {
   transform: scaleX(1);
@@ -107,7 +101,7 @@ header .header__logo a {
   text-decoration: none;
 }
 header .header__logo a img {
-  width: 100px;
+  width: 70px;
   max-width: 100%;
   height: auto;
 }
@@ -136,14 +130,10 @@ header .header__logo a h1 {
   }
 }
 header .header__interior {
-  margin: 0 auto;
-  width: 1200px;
-  max-width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  height: 90px;
+  height: 70px;
   gap: 10px;
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -159,6 +149,7 @@ header .header__interior {
   }
 }
 header .header__interior .navegacion__enlaces {
+  margin: 0;
   display: flex;
   gap: 10px;
   justify-content: space-between;
@@ -187,12 +178,6 @@ header .header__interior .navegacion__enlaces li a {
   font-size: 21px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
@@ -207,7 +192,7 @@ a {
   transition: color 0.3s ease;
 }
 a:hover {
-  color: rgb(0, 98.4, 204);
+  color: #0062cc;
 }
 
 h2 {
@@ -215,12 +200,6 @@ h2 {
 }
 
 .footer__content {
-  display: flex;
-  justify-content: space-between;
-  max-width: 100%;
-  width: 1200px;
-  margin: 0 auto;
-  gap: 10px;
   padding: 10px;
 }
 @media (max-width: 767px) {
@@ -268,44 +247,11 @@ h2 {
 
 .footer__footer-bottom {
   text-align: center;
-  margin-top: 20px;
   font-size: 14px;
   padding: 20px 0;
 }
 .footer__footer-bottom p {
   margin: 0;
-}
-
-.container {
-  margin: 150px auto 0;
-  width: 1200px;
-  max-width: 100%;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .container {
-    margin: 100px 0;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    margin: 80px 0;
-  }
-}
-
-.container {
-  margin: 150px auto 0;
-  width: 1200px;
-  max-width: 100%;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .container {
-    margin: 100px 0;
-  }
-}
-@media (max-width: 767px) {
-  .container {
-    margin: 80px 0;
-  }
 }
 
 .bienvenida {
@@ -349,21 +295,7 @@ h2 {
 }
 
 .servicios {
-  max-width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-}
-@media (min-width: 768px) and (max-width: 1023px) {
-  .servicios {
-    flex-direction: column;
-  }
-}
-@media (max-width: 767px) {
-  .servicios {
-    width: 100%;
-    flex-direction: column;
-  }
+  gap: 50px;
 }
 .servicios .servicios__infor {
   width: 100%;
@@ -371,9 +303,15 @@ h2 {
   gap: 15px;
   flex-direction: row;
 }
+.servicios .servicios__infor.servicios__infor:nth-child(2) {
+  flex-direction: row-reverse;
+}
 @media (max-width: 767px) {
   .servicios .servicios__infor {
     flex-direction: column;
+  }
+  .servicios .servicios__infor.servicios__infor:nth-child(2) {
+    flex-wrap: wrap;
   }
 }
 .servicios .servicios__infor img {
@@ -391,10 +329,11 @@ h2 {
   flex-direction: column;
   gap: 20px;
   margin: 10px 0;
+  padding: 50px;
 }
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (max-width: 767px) {
   .servicios .servicios__infor .servicios__detalles {
-    flex-direction: column;
+    padding: 10px;
   }
 }
 
@@ -405,27 +344,28 @@ h2 {
 }
 
 .testimonios {
-  display: flex;
   padding: 10px;
+}
+.testimonios .row {
+  margin: 50px 0;
 }
 @media (max-width: 767px) {
   .testimonios {
-    flex-direction: column;
     gap: 10px;
   }
 }
+
+@media (min-width: 1200px) {
+  section {
+    padding: 50px 0 0;
+  }
+}
 @media (max-width: 767px) {
-  .testimonios .testimonios__infor {
-    flex-wrap: nowrap;
+  section {
+    padding: 20px 0;
   }
 }
 
-.equipo {
-  max-width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
 @media (max-width: 767px) {
   .equipo {
     margin: 100px 0 0;
@@ -453,6 +393,9 @@ h2 {
 .equipo .equipo__card .equipo__infor {
   max-width: 100%;
   margin: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 @media (max-width: 767px) {
   .equipo .equipo__card .equipo__infor {
@@ -460,9 +403,6 @@ h2 {
   }
 }
 
-.container {
-  padding: 10px;
-}
 .container .infor {
   display: flex;
   flex-direction: row;
@@ -542,4 +482,4 @@ h2 {
   cursor: not-allowed;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=styles.css.map */

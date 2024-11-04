@@ -4,43 +4,45 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <title>Equipo Médico</title>
   </head>
   <body>
     <header>
-      <div class="header__interior">
+      <div class="container header__interior">
         <div class="header__logo">
-          <a href="/">
+          <a href="/" class="header__home">
             <img
               src="../assets/img/logo.png"
               alt="Logo del Hospital"
               id="logo"
+              class="header__logo"
             />
-            <h1>Hospital del Corazón</h1></a
-          >
+            <h1 class="lg:fs-1 header__titulo">Hospital del Corazón</h1>
+          </a>
         </div>
+
         <nav class="navegacion">
           <ul class="navegacion__enlaces">
             <li><a href="/">Home</a></li>
-            <li><a href="equipo-medico.html">Nuestro Equipo Médico </a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li>
+              <a href="/pages/equipo-medico.html">Nuestro Equipo Médico</a>
+            </li>
+            <li><a href="/pages/contacto.html">Contacto</a></li>
           </ul>
         </nav>
 
-        <button class="button active">Reservar cita</button>
+        <button class="btn btn-primary active">Reservar cita</button>
       </div>
     </header>
 
     <div class="container">
-      <div class="equipo">
-        <h1>Equipo Médico</h1>
+      <h1>Equipo Médico</h1>
         <section>
           <p>
             El Hospital del Corazón se compromete a ofrecer atención médica de
@@ -50,7 +52,9 @@
             vanguardia y un enfoque integral en la salud cardiovascular.
           </p>
         </section>
-        <div class="equipo__card">
+      <div class="row g-2 g-lg-3 equipo">
+        
+        <div class="col-12 col-md-6 equipo__card">
           <img
             src="../assets/img/equipo-medico/equipo-1.jpg"
             alt="Dr. Juan Pérez"
@@ -67,7 +71,7 @@
           </div>
         </div>
 
-        <div class="equipo__card">
+        <div class="col-12 col-md-6 equipo__card">
           <img
             src="../assets/img/equipo-medico/equipo-2.jpg"
             alt="Dra. María López"
@@ -84,7 +88,7 @@
           </div>
         </div>
 
-        <div class="equipo__card">
+        <div class="col-12 col-md-6 equipo__card">
           <img
             src="../assets/img/equipo-medico/equipo-3.jpg"
             alt="Dr. Carlos Sánchez"
@@ -101,7 +105,7 @@
           </div>
         </div>
 
-        <div class="equipo__card">
+        <div class="col-12 col-md-6 equipo__card">
           <img
             src="../assets/img/equipo-medico/equipo-4.jpg"
             alt="Dra. Ana Torres"
@@ -121,40 +125,45 @@
       </div>
     </div>
 
-    <footer>
-      <div class="footer__content">
-        <h3>Hospital del Corazón</h3>
-        <div class="footer__logo">
-          <ul class="footer__enlaces">
-            <li>
-              <a href="pages/equipo-medico.html">Nuestro Equipo Médico</a>
-            </li>
-            <li><a href="pages/contacto.html">Contacto</a></li>
-          </ul>
+    <footer class="container">
+      <div class="row footer__content">
+        <div class="col-md-4">
+          <h3>Hospital del Corazón</h3>
+          <div class="footer__logo">
+            <ul class="footer__enlaces list-unstyled">
+              <li>
+                <a href="pages/equipo-medico.html">Nuestro Equipo Médico</a>
+              </li>
+              <li><a href="pages/contacto.html">Contacto</a></li>
+            </ul>
+          </div>
         </div>
 
-        <div class="footer__contact-info">
+        <div class="col-md-4 footer__contact-info">
           <h4>Contacto</h4>
           <p>Teléfono: (123) 456-7890</p>
           <p>Email: contacto@hospitalcorazon.com</p>
           <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
         </div>
 
-        <div class="footer__social-media">
+        <div class="col-md-4 footer__social-media">
           <h4>Síguenos</h4>
           <a href="https://www.facebook.com/hospitalcorazon" target="_blank"
             >Facebook</a
-          >
+          ><br />
           <a href="https://www.twitter.com/hospitalcorazon" target="_blank"
             >Twitter</a
-          >
+          ><br />
           <a href="https://www.instagram.com/hospitalcorazon" target="_blank"
             >Instagram</a
           >
         </div>
       </div>
-      <div class="footer__footer-bottom">
-        <p>&copy; 2024 Hospital del Corazón - Todos los derechos reservados.</p>
+
+      <div class="footer__footer-bottom text-center mt-4">
+        <p>
+          &copy; 2024 Hospital del Corazón - Todos los derechos reservados.
+        </p>
       </div>
     </footer>
   </body>

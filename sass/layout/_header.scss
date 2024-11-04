@@ -26,7 +26,7 @@ header {
       text-decoration: none;
 
       img {
-        width: 100px;
+        width: 70px;
         max-width: 100%;
         height: auto;
 
@@ -55,14 +55,10 @@ header {
   }
 
   .header__interior {
-    margin: 0 auto;
-    width: 1200px;
-    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    height: 90px;
+    height: 70px;
     gap: 10px;
 
     @include tablet() {
@@ -77,6 +73,7 @@ header {
 
     .navegacion {
       &__enlaces {
+        margin: 0;
         @include laptop() {
           display: flex;
         }
