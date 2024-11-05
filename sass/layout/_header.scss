@@ -73,6 +73,11 @@ header {
 
     .navegacion {
       &__enlaces {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        gap: 2rem;
         margin: 0;
         @include laptop() {
           display: flex;
@@ -89,12 +94,41 @@ header {
         gap: 10px;
         justify-content: space-between;
         padding: 10px 0;
-        li {
-          list-style: none;
 
-          a {
-            text-decoration: none;
-            font-size: 21px;
+        a {
+          text-decoration: none;
+          color: #333;
+          font-weight: 500;
+          position: relative;
+          padding-bottom: 5px;
+          transition: color 0.3s ease;
+
+          &:hover {
+            color: $primary-color;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: $primary-color;
+            transition: width 0.5s ease;
+          }
+
+          &:hover::after {
+            width: 100%;
+          }
+
+          &.active {
+            color: $primary-color;
+
+            &::after {
+              width: 100%;
+              background-color: darken($primary-color, 10%);
+            }
           }
         }
       }

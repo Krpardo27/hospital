@@ -6,15 +6,6 @@ body {
   background-color: #f8f9fa;
 }
 
-a {
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-a:hover {
-  color: #0062cc;
-}
-
 h2 {
   margin: 20px 0;
 }
@@ -149,6 +140,11 @@ header .header__interior {
   }
 }
 header .header__interior .navegacion__enlaces {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 2rem;
   margin: 0;
   display: flex;
   gap: 10px;
@@ -170,12 +166,36 @@ header .header__interior .navegacion__enlaces {
     display: none;
   }
 }
-header .header__interior .navegacion__enlaces li {
-  list-style: none;
-}
-header .header__interior .navegacion__enlaces li a {
+header .header__interior .navegacion__enlaces a {
   text-decoration: none;
-  font-size: 21px;
+  color: #333;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 5px;
+  transition: color 0.3s ease;
+}
+header .header__interior .navegacion__enlaces a:hover {
+  color: #007bff;
+}
+header .header__interior .navegacion__enlaces a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #007bff;
+  transition: width 0.5s ease;
+}
+header .header__interior .navegacion__enlaces a:hover::after {
+  width: 100%;
+}
+header .header__interior .navegacion__enlaces a.active {
+  color: #007bff;
+}
+header .header__interior .navegacion__enlaces a.active::after {
+  width: 100%;
+  background-color: #0062cc;
 }
 
 body {
@@ -184,15 +204,6 @@ body {
   color: #333;
   line-height: 1.5;
   background-color: #f8f9fa;
-}
-
-a {
-  color: #007bff;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-a:hover {
-  color: #0062cc;
 }
 
 h2 {
@@ -355,25 +366,19 @@ h2 {
   }
 }
 
-@media (min-width: 1200px) {
-  section {
-    padding: 50px 0 0;
-  }
-}
-@media (max-width: 767px) {
-  section {
-    padding: 20px 0;
-  }
+.equipo-medico {
+  padding: 150px 0 0;
 }
 
-@media (max-width: 767px) {
-  .equipo {
-    margin: 100px 0 0;
-  }
-}
 .equipo .equipo__card {
   display: flex;
   gap: 20px;
+  padding: 20px 0;
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .equipo .equipo__card {
+    flex-direction: column;
+  }
 }
 @media (max-width: 767px) {
   .equipo .equipo__card {
