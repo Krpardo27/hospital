@@ -13,21 +13,45 @@ Para visualizar el proyecto en un navegador, sigue estos pasos:
 3. Abre el archivo `index.html` en tu navegador preferido. Puedes hacerlo haciendo doble clic en el archivo o arrastrándolo a la ventana del navegador.
 
 ## Estructura de Carpetas y Archivos
-/proyecto │ ├── index.html # Página principal de la aplicación ├── assets/css # Carpeta que contiene estilos CSS │ └── styles.css # Archivo de estilos │ ├── assets/js # Carpeta que contiene scripts JavaScript │ └── scripts.js # Archivo de scripts │ └── assets/img # Carpeta que contiene imágenes └── logo.png # Logo de la aplicación
+/hospital
+│
+├── index.html                  # Página principal de la aplicación
+├── README.md                   # Documentación del proyecto
+├── styles.css                  # Archivo de estilos compilado
+├── styles.css.map              # Mapa de estilos CSS para depuración
+├── page/                       # Carpeta que contiene páginas HTML
+│   ├── contacto.html           # Página de contacto
+│   └── equipo-medico.html      # Página del equipo médico
+└── assets/
+    ├── img/                    # Carpeta para las imágenes utilizadas en la aplicación
+    └── js/                     # Carpeta que contiene scripts JavaScript
+└── sass/
+    ├── main.scss               # Archivo principal que importa todos los parciales
+    ├── main.scss.map           # Mapa de SASS para depuración
+    ├── abstracts/              # Carpeta para elementos abstractos (variables, mixins, etc.)
+    │   └── _mixins.scss         # Mixins para reutilización de estilos
+    ├── components/              # Carpeta para componentes específicos
+    │   ├── _buttonCita.scss     # Estilos para el botón de cita
+    │   └── _navegacion.scss      # Estilos para la navegación
+    ├── layout/                  # Carpeta para la estructura de la página
+    │   ├── _container.scss       # Estilos para el contenedor principal
+    │   ├── _footer.scss          # Estilos para el pie de página
+    │   └── _header.scss          # Estilos para el encabezado
+    └── pages/                  # Carpeta para estilos específicos de páginas
+        ├── _contacto.scss       # Estilos para la página de contacto
+        ├── _equipo-medico.scss  # Estilos para la página de equipo médico
+        └── _home.scss           # Estilos para la página principal
 
-## Explicación Breve de Cada Vista
 
-### 1. Home
+## Descripción modulación SASS
+Modularización de Estilos
+La modularización de los estilos se implementó utilizando SASS (Syntactically Awesome Style Sheets), lo que permite dividir los estilos en archivos parciales. Esto mejora la mantenibilidad del código, ya que cada archivo se encarga de un aspecto específico de los estilos de la aplicación. Además, se utilizaron media queries para asegurar que la aplicación sea responsiva y se adapte a diferentes tamaños de pantalla.
 
-- **Descripción**: La vista principal de la aplicación. Presenta una breve introducción al proyecto y destaca las secciones disponibles.
-- **Funcionalidad**: Ofrece enlaces a las demás secciones (equipo médico y contacto) y puede incluir información relevante o noticias recientes.
+## Detalles estructura SASS
+Se crearon nuevas carpetas, entre ellas, "modules", dos archivos SASS - _base.scss y _variables.scss. 
 
-### 2. Equipo Médico
+### 1. Variables
+Se definen varias variables para facilitar la gestión de los colores y la tipografía:
 
-- **Descripción**: Esta sección presenta al equipo médico, incluyendo nombres, especialidades y fotos.
-- **Funcionalidad**: Permite a los usuarios conocer a los profesionales que forman parte de la organización, facilitando una conexión más personal y confiable.
-
-### 3. Contacto
-
-- **Descripción**: Un formulario donde los usuarios pueden enviar consultas o mensajes.
-- **Funcionalidad**: Recoge la información del usuario (nombre, correo electrónico, mensaje) y permite enviar mensajes al equipo. Incluye validaciones básicas para asegurar que la información proporcionada sea correcta.
+### 2. Estilos Globales
+Los estilos globales se aplican a todos los elementos para garantizar una apariencia coherente en toda la aplicación:
