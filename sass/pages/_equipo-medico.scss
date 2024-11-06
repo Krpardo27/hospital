@@ -1,22 +1,28 @@
 @import '../abstracts/mixins';
 
-.equipo {
+.equipo-medico {
+  padding: 150px 0 0;
+}
 
-  @include mobile() {
-    margin: 100px 0 0;
-  }
+.equipo {
 
   .equipo__card {
     display: flex;
     gap: 20px;
+    padding: 20px 0;
+
     
+    @include tablet() {
+      flex-direction: column;
+    }
+
     @include mobile() {
       flex-direction: column;
     }
     
 
     img {
-      width: 300px;
+      width: 200px;
       max-width: 100%;
       object-fit: cover;
 

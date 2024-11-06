@@ -9,7 +9,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../sass/main.css" />
     <title>Contacto</title>
   </head>
   <body>
@@ -31,13 +31,13 @@
           <ul class="navegacion__enlaces">
             <li><a href="/">Home</a></li>
             <li>
-              <a href="/pages/equipo-medico.html">Nuestro Equipo Médico</a>
+              <a href="./equipo-medico.html">Nuestro Equipo Médico</a>
             </li>
-            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="./contacto.html" class="active">Contacto</a></li>
           </ul>
         </nav>
 
-        <button class="btn btn-primary active">Reservar cita</button>
+        <button class="btn btn-outline-primary me-2">Reservar cita</button>
       </div>
     </header>
 
@@ -50,27 +50,50 @@
         <form class="mt-4">
           <div class="mb-3">
             <label for="nombre" class="form-label">Nombre:</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required />
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              name="nombre"
+              required
+            />
           </div>
-        
+
           <div class="mb-3">
             <label for="email" class="form-label">Correo Electrónico:</label>
-            <input type="email" class="form-control" id="email" name="email" required />
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
           </div>
-        
+
           <div class="mb-3">
             <label for="asunto" class="form-label">Asunto:</label>
-            <input type="text" class="form-control" id="asunto" name="asunto" required />
+            <input
+              type="text"
+              class="form-control"
+              id="asunto"
+              name="asunto"
+              required
+            />
           </div>
-        
+
           <div class="mb-3">
             <label for="mensaje" class="form-label">Mensaje:</label>
-            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+            <textarea
+              class="form-control"
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              required
+            ></textarea>
           </div>
-        
+
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
-        
 
         <div class="mapa">
           <iframe
@@ -84,49 +107,168 @@
           ></iframe>
         </div>
       </div>
-    </div>
 
-    <!-- FOOTER -->
-    <footer class="container">
-      <div class="row footer__content">
-        <div class="col-md-4">
-          <h3>Hospital del Corazón</h3>
-          <div class="footer__logo">
-            <ul class="footer__enlaces list-unstyled">
-              <li>
-                <a href="equipo-medico.html">Nuestro Equipo Médico</a>
-              </li>
-              <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseOne"
+              aria-expanded="true"
+              aria-controls="collapseOne"
+            >
+              ¿Qué servicios médicos ofrece el Hospital del Corazón?
+            </button>
+          </h2>
+          <div
+            id="collapseOne"
+            class="accordion-collapse collapse show"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                El Hospital del Corazón se especializa en el diagnóstico,
+                tratamiento y seguimiento de enfermedades cardiovasculares.
+                Ofrecemos una amplia gama de servicios, que incluyen:
+              </p>
+              <ul>
+                <li>Consultas de cardiología general y especializada.</li>
+                <li>
+                  Pruebas diagnósticas (electrocardiogramas, ecocardiogramas,
+                  pruebas de esfuerzo, entre otros).
+                </li>
+                <li>
+                  Procedimientos quirúrgicos como bypass coronario,
+                  angioplastias y reemplazo de válvulas cardíacas.
+                </li>
+                <li>Rehabilitación cardíaca.</li>
+                <li>
+                  Programas de prevención y control de enfermedades cardíacas.
+                </li>
+                <li>Urgencias y emergencias cardiovasculares.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo"
+              aria-expanded="false"
+              aria-controls="collapseTwo"
+            >
+              ¿Cómo puedo hacer una cita en el Hospital del Corazón?
+            </button>
+          </h2>
+          <div
+            id="collapseTwo"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>Puede solicitar una cita de varias formas:</p>
+              <ul>
+                <li>
+                  <strong>Por teléfono:</strong> Llame a nuestra central de
+                  citas al [número de teléfono].
+                </li>
+                <li>
+                  <strong>En línea:</strong> Visite nuestro sitio web y use
+                  nuestro sistema de citas en línea para seleccionar la
+                  especialidad y el horario que más le convenga.
+                </li>
+                <li>
+                  <strong>En persona:</strong> Acérquese a la recepción de
+                  nuestro hospital, donde nuestro equipo de atención al cliente
+                  le asistirá en la programación de su cita.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button
+              class="accordion-button collapsed"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThree"
+              aria-expanded="false"
+              aria-controls="collapseThree"
+            >
+              ¿Aceptan seguros médicos?
+            </button>
+          </h2>
+          <div
+            id="collapseThree"
+            class="accordion-collapse collapse"
+            data-bs-parent="#accordionExample"
+          >
+            <div class="accordion-body">
+              <p>
+                Sí, el Hospital del Corazón acepta una variedad de seguros
+                médicos. Aceptamos seguros nacionales e internacionales. Para
+                confirmar si su seguro es válido, le recomendamos ponerse en
+                contacto con nuestra oficina de facturación o consultar con su
+                aseguradora. También ofrecemos opciones de pago privado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- FOOTER -->
+      <footer>
+        <div class="row footer__content">
+          <div class="col-md-4">
+            <h3>Hospital del Corazón</h3>
+            <div class="footer__logo">
+              <ul class="footer__enlaces list-unstyled">
+                <li>
+                  <a href="./equipo-medico.html">Nuestro Equipo Médico</a>
+                </li>
+                <li><a href="./contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 footer__contact-info">
+            <h4>Contacto</h4>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: contacto@hospitalcorazon.com</p>
+            <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+          </div>
+
+          <div class="col-md-4 footer__social-media">
+            <h4>Síguenos</h4>
+            <a href="https://www.facebook.com/hospitalcorazon" target="_blank"
+              >Facebook</a
+            ><br />
+            <a href="https://www.twitter.com/hospitalcorazon" target="_blank"
+              >Twitter</a
+            ><br />
+            <a href="https://www.instagram.com/hospitalcorazon" target="_blank"
+              >Instagram</a
+            >
           </div>
         </div>
 
-        <div class="col-md-4 footer__contact-info">
-          <h4>Contacto</h4>
-          <p>Teléfono: (123) 456-7890</p>
-          <p>Email: contacto@hospitalcorazon.com</p>
-          <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+        <div class="footer__footer-bottom text-center mt-4">
+          <p>
+            &copy; 2024 Hospital del Corazón - Todos los derechos reservados.
+          </p>
         </div>
-
-        <div class="col-md-4 footer__social-media">
-          <h4>Síguenos</h4>
-          <a href="https://www.facebook.com/hospitalcorazon" target="_blank"
-            >Facebook</a
-          ><br />
-          <a href="https://www.twitter.com/hospitalcorazon" target="_blank"
-            >Twitter</a
-          ><br />
-          <a href="https://www.instagram.com/hospitalcorazon" target="_blank"
-            >Instagram</a
-          >
-        </div>
-      </div>
-
-      <div class="footer__footer-bottom text-center mt-4">
-        <p>
-          &copy; 2024 Hospital del Corazón - Todos los derechos reservados.
-        </p>
-      </div>
-    </footer>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

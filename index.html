@@ -10,7 +10,7 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="sass/main.css" />
   </head>
   <body>
     <header>
@@ -29,15 +29,15 @@
 
         <nav class="navegacion">
           <ul class="navegacion__enlaces">
-            <li><a href="/">Home</a></li>
+            <li><a href="/" class="active">Home</a></li>
             <li>
-              <a href="/pages/equipo-medico.html">Nuestro Equipo Médico</a>
+              <a href="./pages/equipo-medico.html">Nuestro Equipo Médico</a>
             </li>
-            <li><a href="/pages/contacto.html">Contacto</a></li>
+            <li><a href="./pages/contacto.html">Contacto</a></li>
           </ul>
         </nav>
 
-        <button class="btn btn-primary active">Reservar cita</button>
+        <button class="btn btn-outline-primary me-2">Reservar cita</button>
       </div>
     </header>
 
@@ -140,7 +140,7 @@
           Testimonios de Pacientes
         </h2>
         <div class="row g-3">
-          <div class="col-md-3 col-12">
+          <div class="col-md-6 col-lg-3 col-12">
             <div class="testimonios__infor p-3 border rounded bg-light">
               <p><strong>María G.</strong></p>
               <p>
@@ -152,7 +152,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-12">
+          <div class="col-md-6 col-lg-3 col-12">
             <div class="testimonios__infor p-3 border rounded bg-light">
               <p><strong>José L.</strong></p>
               <p>
@@ -164,7 +164,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-12">
+          <div class="col-md-6 col-lg-3 col-12">
             <div class="testimonios__infor p-3 border rounded bg-light">
               <p><strong>Ana R.</strong></p>
               <p>
@@ -175,7 +175,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-12">
+          <div class="col-md-6 col-lg-3 col-12">
             <div class="testimonios__infor p-3 border rounded bg-light">
               <p><strong>Carlos T.</strong></p>
               <p>
@@ -196,9 +196,9 @@
             <div class="footer__logo">
               <ul class="footer__enlaces list-unstyled">
                 <li>
-                  <a href="pages/equipo-medico.html">Nuestro Equipo Médico</a>
+                  <a href="./pages/equipo-medico.html">Nuestro Equipo Médico</a>
                 </li>
-                <li><a href="pages/contacto.html">Contacto</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
               </ul>
             </div>
           </div>
@@ -231,5 +231,6 @@
         </div>
       </footer>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>

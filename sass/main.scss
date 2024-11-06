@@ -1,14 +1,12 @@
-$enable-grid-classes: false;
-$enable-cssgrid: true;
-
 @import "abstracts/mixins";
-@import "base/variables";
-@import 'modules/base';
+@import "abstracts/variables";
+@import "modules/base";
 
 // COMPONENTS
 @import "components/buttonCita";
 
 // VARIABLES
+
 @import "components/navegacion";
 
 // LAYOUTS
@@ -16,7 +14,17 @@ $enable-cssgrid: true;
 @import "layout/footer";
 @import "layout/container";
 
-// PAGES
+//  PAGES
 @import "pages/home";
 @import "pages/equipo-medico";
 @import "pages/contacto";
+
+
+$primary: #FF5733; 
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
