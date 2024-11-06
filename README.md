@@ -28,8 +28,9 @@ Para visualizar el proyecto en un navegador, sigue estos pasos:
 └── sass/
     ├── main.scss               # Archivo principal que importa todos los parciales
     ├── main.scss.map           # Mapa de SASS para depuración
-    ├── abstracts/              # Carpeta para elementos abstractos (variables, mixins, etc.)
+    ├── abstracts/              # Carpeta para elementos abstractos
     │   └── _mixins.scss         # Mixins para reutilización de estilos
+    │   └── _variables.scss         # Mixins para reutilización de estilos
     ├── components/              # Carpeta para componentes específicos
     │   ├── _buttonCita.scss     # Estilos para el botón de cita
     │   └── _navegacion.scss      # Estilos para la navegación
