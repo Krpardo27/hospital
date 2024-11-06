@@ -48,11 +48,18 @@ Para visualizar el proyecto en un navegador, sigue estos pasos:
 Modularización de Estilos
 La modularización de los estilos se implementó utilizando SASS (Syntactically Awesome Style Sheets), lo que permite dividir los estilos en archivos parciales. Esto mejora la mantenibilidad del código, ya que cada archivo se encarga de un aspecto específico de los estilos de la aplicación. Además, se utilizaron media queries para asegurar que la aplicación sea responsiva y se adapte a diferentes tamaños de pantalla.
 
-## Detalles estructura SASS
-Se crearon nuevas carpetas, entre ellas, "modules", dos archivos SASS - _base.scss y _variables.scss. 
+# Integración de Bootstrap y Modificaciones con SASS
 
-### 1. Variables
-Se definen varias variables para facilitar la gestión de los colores y la tipografía:
+Este proyecto utiliza **Bootstrap** para aprovechar su sistema de diseño responsivo, sus componentes y utilidades. Sin embargo, se ha integrado con **SASS** para personalizar y modificar sus estilos de manera más flexible y adaptada a las necesidades del proyecto.
 
-### 2. Estilos Globales
-Los estilos globales se aplican a todos los elementos para garantizar una apariencia coherente en toda la aplicación:
+A continuación, se describen los pasos para integrar Bootstrap en el proyecto y las modificaciones realizadas mediante SASS.
+
+## Pasos para la Integración de Bootstrap
+
+### 1. Instalación de Bootstrap
+
+Bootstrap se ha instalado a través de **npm** para facilitar la integración con SASS y para poder personalizar las variables que ofrece el framework. La instalación se realiza con el siguiente comando:
+
+### bash
+npm install bootstrap
+
