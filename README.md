@@ -28,9 +28,14 @@ Para visualizar el proyecto en un navegador, sigue estos pasos:
 └── sass/
     ├── main.scss               # Archivo principal que importa todos los parciales
     ├── main.scss.map           # Mapa de SASS para depuración
+<<<<<<< HEAD
     ├── abstracts/              # Carpeta para elementos abstractos
     │   └── _mixins.scss         # Mixins para reutilización de estilos
     │   └── _variables.scss         # Mixins para reutilización de estilos
+=======
+    ├── abstracts/              # Carpeta para elementos abstractos (variables, mixins, etc.)
+    │   └── _mixins.scss         # Mixins para reutilización de estilos
+>>>>>>> e00573eecb8ec3656aeb6d670df7f01ac379684e
     ├── components/              # Carpeta para componentes específicos
     │   ├── _buttonCita.scss     # Estilos para el botón de cita
     │   └── _navegacion.scss      # Estilos para la navegación
@@ -48,6 +53,7 @@ Para visualizar el proyecto en un navegador, sigue estos pasos:
 Modularización de Estilos
 La modularización de los estilos se implementó utilizando SASS (Syntactically Awesome Style Sheets), lo que permite dividir los estilos en archivos parciales. Esto mejora la mantenibilidad del código, ya que cada archivo se encarga de un aspecto específico de los estilos de la aplicación. Además, se utilizaron media queries para asegurar que la aplicación sea responsiva y se adapte a diferentes tamaños de pantalla.
 
+<<<<<<< HEAD
 # Integración de Bootstrap y Modificaciones con SASS
 
 Este proyecto utiliza **Bootstrap** para aprovechar su sistema de diseño responsivo, sus componentes y utilidades. Sin embargo, se ha integrado con **SASS** para personalizar y modificar sus estilos de manera más flexible y adaptada a las necesidades del proyecto.
@@ -63,3 +69,13 @@ Bootstrap se ha instalado a través de **npm** para facilitar la integración co
 ### bash
 npm install bootstrap
 
+=======
+## Detalles estructura SASS
+Se crearon nuevas carpetas, entre ellas, "modules", dos archivos SASS - _base.scss y _variables.scss. 
+
+### 1. Variables
+Se definen varias variables para facilitar la gestión de los colores y la tipografía:
+
+### 2. Estilos Globales
+Los estilos globales se aplican a todos los elementos para garantizar una apariencia coherente en toda la aplicación:
+>>>>>>> e00573eecb8ec3656aeb6d670df7f01ac379684e
