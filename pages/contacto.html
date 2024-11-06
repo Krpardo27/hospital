@@ -31,9 +31,9 @@
           <ul class="navegacion__enlaces">
             <li><a href="/">Home</a></li>
             <li>
-              <a href="/pages/equipo-medico.html">Nuestro Equipo Médico</a>
+              <a href="./equipo-medico.html">Nuestro Equipo Médico</a>
             </li>
-            <li><a href="/pages/contacto.html" class="active">Contacto</a></li>
+            <li><a href="./contacto.html" class="active">Contacto</a></li>
           </ul>
         </nav>
 
@@ -50,27 +50,50 @@
         <form class="mt-4">
           <div class="mb-3">
             <label for="nombre" class="form-label">Nombre:</label>
-            <input type="text" class="form-control" id="nombre" name="nombre" required />
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              name="nombre"
+              required
+            />
           </div>
-        
+
           <div class="mb-3">
             <label for="email" class="form-label">Correo Electrónico:</label>
-            <input type="email" class="form-control" id="email" name="email" required />
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
           </div>
-        
+
           <div class="mb-3">
             <label for="asunto" class="form-label">Asunto:</label>
-            <input type="text" class="form-control" id="asunto" name="asunto" required />
+            <input
+              type="text"
+              class="form-control"
+              id="asunto"
+              name="asunto"
+              required
+            />
           </div>
-        
+
           <div class="mb-3">
             <label for="mensaje" class="form-label">Mensaje:</label>
-            <textarea class="form-control" id="mensaje" name="mensaje" rows="4" required></textarea>
+            <textarea
+              class="form-control"
+              id="mensaje"
+              name="mensaje"
+              rows="4"
+              required
+            ></textarea>
           </div>
-        
+
           <button type="submit" class="btn btn-primary">Enviar</button>
         </form>
-        
 
         <div class="mapa">
           <iframe
@@ -84,49 +107,49 @@
           ></iframe>
         </div>
       </div>
-    </div>
 
-    <!-- FOOTER -->
-    <footer class="container">
-      <div class="row footer__content">
-        <div class="col-md-4">
-          <h3>Hospital del Corazón</h3>
-          <div class="footer__logo">
-            <ul class="footer__enlaces list-unstyled">
-              <li>
-                <a href="equipo-medico.html">Nuestro Equipo Médico</a>
-              </li>
-              <li><a href="contacto.html">Contacto</a></li>
-            </ul>
+      <!-- FOOTER -->
+      <footer>
+        <div class="row footer__content">
+          <div class="col-md-4">
+            <h3>Hospital del Corazón</h3>
+            <div class="footer__logo">
+              <ul class="footer__enlaces list-unstyled">
+                <li>
+                  <a href="./equipo-medico.html">Nuestro Equipo Médico</a>
+                </li>
+                <li><a href="./contacto.html">Contacto</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 footer__contact-info">
+            <h4>Contacto</h4>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: contacto@hospitalcorazon.com</p>
+            <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+          </div>
+
+          <div class="col-md-4 footer__social-media">
+            <h4>Síguenos</h4>
+            <a href="https://www.facebook.com/hospitalcorazon" target="_blank"
+              >Facebook</a
+            ><br />
+            <a href="https://www.twitter.com/hospitalcorazon" target="_blank"
+              >Twitter</a
+            ><br />
+            <a href="https://www.instagram.com/hospitalcorazon" target="_blank"
+              >Instagram</a
+            >
           </div>
         </div>
 
-        <div class="col-md-4 footer__contact-info">
-          <h4>Contacto</h4>
-          <p>Teléfono: (123) 456-7890</p>
-          <p>Email: contacto@hospitalcorazon.com</p>
-          <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+        <div class="footer__footer-bottom text-center mt-4">
+          <p>
+            &copy; 2024 Hospital del Corazón - Todos los derechos reservados.
+          </p>
         </div>
-
-        <div class="col-md-4 footer__social-media">
-          <h4>Síguenos</h4>
-          <a href="https://www.facebook.com/hospitalcorazon" target="_blank"
-            >Facebook</a
-          ><br />
-          <a href="https://www.twitter.com/hospitalcorazon" target="_blank"
-            >Twitter</a
-          ><br />
-          <a href="https://www.instagram.com/hospitalcorazon" target="_blank"
-            >Instagram</a
-          >
-        </div>
-      </div>
-
-      <div class="footer__footer-bottom text-center mt-4">
-        <p>
-          &copy; 2024 Hospital del Corazón - Todos los derechos reservados.
-        </p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>
