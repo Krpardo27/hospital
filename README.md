@@ -63,3 +63,18 @@ Bootstrap se ha instalado a través de **npm** para facilitar la integración co
 ### bash
 npm install bootstrap
 
+## Decisión sobre JavaScript Avanzado vs. TypeScript
+
+Tras evaluar las necesidades del proyecto y las características de ambas tecnologías, se ha decidido **utilizar JavaScript avanzado** para el desarrollo de la página web del hospital.
+
+### Razones para elegir JavaScript avanzado:
+
+- **Simplicidad y rapidez**: El proyecto es una página web básica y no requiere la complejidad adicional que implica el uso de TypeScript, como la curva de aprendizaje o el paso de transpilación. JavaScript avanzado ofrece características modernas como **async/await**, **promesas** y **módulos**, que facilitan la escritura de código limpio y eficiente sin complicar el proceso de desarrollo.
+  
+- **Compatibilidad**: La mayoría de los navegadores modernos ya soportan las características avanzadas de JavaScript, por lo que no se anticipan problemas de compatibilidad. Esto garantiza que la página funcionará correctamente en una amplia gama de dispositivos y plataformas.
+
+- **Requerimientos del proyecto**: El proyecto es relativamente simple, por lo que no se justifica el uso de un sistema de tipado estático como TypeScript. La flexibilidad de JavaScript es suficiente para manejar las interacciones y funcionalidades de la página sin complicaciones adicionales.
+
+### Conclusión
+
+**JavaScript avanzado** es la opción más adecuada para este proyecto, ya que permite un desarrollo rápido, es completamente compatible con los navegadores modernos y satisface las necesidades de una página web básica para el hospital, sin la sobrecarga de configurar un entorno de TypeScript.
