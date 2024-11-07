@@ -63,7 +63,6 @@ Bootstrap se ha instalado a través de **npm** para facilitar la integración co
 ### bash
 npm install bootstrap
 
-
 ## Decisión sobre JavaScript Avanzado vs. TypeScript
 
 Tras evaluar las necesidades del proyecto y las características de ambas tecnologías, se ha decidido **utilizar JavaScript avanzado** para el desarrollo de la página web del hospital.
@@ -79,4 +78,3 @@ Tras evaluar las necesidades del proyecto y las características de ambas tecnol
 ### Conclusión
 
 **JavaScript avanzado** es la opción más adecuada para este proyecto, ya que permite un desarrollo rápido, es completamente compatible con los navegadores modernos y satisface las necesidades de una página web básica para el hospital, sin la sobrecarga de configurar un entorno de TypeScript.
-
