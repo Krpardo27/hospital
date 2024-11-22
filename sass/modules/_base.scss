@@ -2,6 +2,7 @@ $primary-color: #007bff;
 $secondary-color: #f8f9fa;
 $text-color: #333;
 $font-stack: "Poppins", sans-serif;
+$primary: #ff5733;
 
 body {
   font-family: $font-stack;
@@ -15,3 +16,12 @@ h2 {
   margin: 20px 0;
 }
 
+p {
+  font-size: 18px;
+}
+
+section {
+  margin: 80px 0 30px;
+}
+
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";

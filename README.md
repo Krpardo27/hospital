@@ -78,3 +78,50 @@ Tras evaluar las necesidades del proyecto y las características de ambas tecnol
 ### Conclusión
 
 **JavaScript avanzado** es la opción más adecuada para este proyecto, ya que permite un desarrollo rápido, es completamente compatible con los navegadores modernos y satisface las necesidades de una página web básica para el hospital, sin la sobrecarga de configurar un entorno de TypeScript.
+
+
+## Integración de Prompts y Validación de Datos
+
+### Prompts
+
+El proyecto incluye formularios interactivos que utilizan **prompts** para obtener información del usuario, como el formulario de contacto. Los prompts permiten solicitar datos al usuario de manera sencilla y directa.
+
+### Validación de Datos
+
+La validación de los datos ingresados por el usuario se realiza mediante funciones JavaScript que aseguran que los datos sean correctos antes de enviarlos o procesarlos. A continuación, se detallan los pasos básicos para validar los datos:
+
+1. **Validación de campos vacíos**: Se verifica que el usuario haya completado todos los campos obligatorios, como nombre, correo electrónico y mensaje.
+2. **Validación de formato de correo electrónico**: Utilizamos una expresión regular para comprobar que el correo electrónico ingresado tenga un formato válido.
+3. **Manejo de errores**: Si algún dato es incorrecto, se informa al usuario mediante un mensaje de error.
+
+## Explicación del Scope de Variables y Uso de Operadores
+
+### Scope de Variables
+
+En el código JavaScript, el scope de las variables determina el alcance de su visibilidad y acceso. Existen dos tipos de scope:
+
+1. **Scope global**: Las variables definidas fuera de funciones tienen un alcance global y son accesibles desde cualquier parte del código.
+2. **Scope local**: Las variables definidas dentro de una función solo son accesibles dentro de esa función.
+
+Es importante utilizar el scope adecuado para evitar errores y mejorar la mantenibilidad del código.
+
+### Uso de Operadores
+
+Se utilizan operadores básicos de JavaScript para realizar operaciones en los datos. Los operadores más comunes son:
+
+- **Operadores de comparación**: ==, ===, !=, >, < (para comparar valores).
+
+## Instrucciones sobre Cómo Usar el Debugger y Manejo de Errores con try/catch
+
+### Usando el Debugger
+
+Para depurar el código JavaScript, se puede utilizar las herramientas de desarrollo del navegador (DevTools). La consola de JavaScript te permitirá agregar **puntos de interrupción** (breakpoints) en el código para detener la ejecución y examinar el estado de las variables y los valores en tiempo real.
+
+1. Abre las **Herramientas de Desarrollo** en tu navegador (usualmente con la tecla F12).
+2. Ve a la pestaña **"Sources"**.
+3. Coloca un **punto de interrupción** en una línea de código haciendo clic en el número de la línea.
+4. Refresca la página y la ejecución se detendrá en el punto de interrupción, permitiéndote inspeccionar el valor de las variables.
+
+### Manejo de Errores con `try/catch`
+
+El manejo de errores es crucial para garantizar que el sitio web siga funcionando de manera adecuada incluso cuando ocurren errores inesperados. En este proyecto, utilizamos el bloque `try/catch` para capturar errores y mostrar mensajes apropiados al usuario
