@@ -39,7 +39,6 @@ document.addEventListener("DOMContentLoaded", (event) => {
 //     console.error("Error al cargar los datos:", error);
 //   });
 
-// Usamos fetch() para cargar el archivo JSON
 // Usamos fetch para cargar el archivo JSON
 fetch("servicios.json")
   .then((response) => {
