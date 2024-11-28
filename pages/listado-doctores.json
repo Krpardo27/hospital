@@ -1,0 +1,34 @@
+{
+  "doctores": [
+    {
+      "nombre": "Dr. Ana Pérez",
+      "especialidad": "Cardiología",
+      "experiencia": 12,
+      "disponibilidad": "Lunes a Viernes, 9:00 AM - 3:00 PM"
+    },
+    {
+      "nombre": "Dr. Luis González",
+      "especialidad": "Pediatría",
+      "experiencia": 8,
+      "disponibilidad": "Martes y Jueves, 10:00 AM - 2:00 PM"
+    },
+    {
+      "nombre": "Dra. María Rodríguez",
+      "especialidad": "Neurología",
+      "experiencia": 15,
+      "disponibilidad": "Lunes, Miércoles y Viernes, 8:00 AM - 1:00 PM"
+    },
+    {
+      "nombre": "Dr. Jorge Martínez",
+      "especialidad": "Ortopedia",
+      "experiencia": 20,
+      "disponibilidad": "Lunes a Viernes, 10:00 AM - 4:00 PM"
+    },
+    {
+      "nombre": "Dra. Carmen López",
+      "especialidad": "Ginecología",
+      "experiencia": 10,
+      "disponibilidad": "Miércoles y Viernes, 9:00 AM - 12:00 PM"
+    }
+  ]
+}
