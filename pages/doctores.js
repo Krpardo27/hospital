@@ -52,16 +52,6 @@ fetch("listado-doctores.json")
        </ul>
      `;
 
-    doctores.push({
-      nombre: "Nuevo Doctor",
-      especialidad: "Dermatología",
-      experiencia: 3,
-    });
-    doctores.pop(); // Elimina el último elemento
-
-    const encontrado = doctores.find((doc) => doc.nombre === "Dr. Ana Pérez");
-    console.log(encontrado);
-
     // Mostrar el objeto fusionado en la consola
     console.log("Objeto fusionado (primer doctor + servicios):");
     console.log(fusionado);
@@ -70,6 +60,18 @@ fetch("listado-doctores.json")
     const doctoresJSON = JSON.stringify(data, null, 2);
     console.log("Objeto JSON como cadena:");
     console.log(doctoresJSON);
+
+    doctores.push({
+      nombre: "Nuevo Doctor",
+      especialidad: "Dermatología",
+      experiencia: 3,
+      disponibilidad: 'Martes y Jueves, 10:00 AM - 2:00 PM'
+    });
+    doctores.pop(); // Elimina el último elemento
+    console.log(doctores);
+    
+    const encontrado = doctores.find((doc) => doc.nombre === "Dr. Ana Pérez");
+    console.log(encontrado);
 
     const citas = [];
     citas.push("Cita 1");
@@ -81,14 +83,12 @@ fetch("listado-doctores.json")
     pacientes.push("Paciente 2");
     console.log(pacientes.shift()); // Atiende al primer paciente
 
-    const buscarDoctor = nombre => doctores.find(doc => doc.nombre === nombre);
-    console.log(buscarDoctor("Dr. Ana Pérez"));
+    const buscarDoctor = (nombre) =>
+      doctores.find((doc) => doc.nombre === nombre);
+    console.log(buscarDoctor("Dra. María Rodríguez"));
 
     doctores.sort((a, b) => b.experiencia - a.experiencia);
     console.log(doctores);
-
-
-
   })
   .catch((error) => {
     console.error("Error al cargar el archivo JSON:", error);
