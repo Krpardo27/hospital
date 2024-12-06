@@ -65,11 +65,11 @@ fetch("listado-doctores.json")
       nombre: "Nuevo Doctor",
       especialidad: "Dermatología",
       experiencia: 3,
-      disponibilidad: 'Martes y Jueves, 10:00 AM - 2:00 PM'
+      disponibilidad: "Martes y Jueves, 10:00 AM - 2:00 PM",
     });
     doctores.pop(); // Elimina el último elemento
     console.log(doctores);
-    
+
     const encontrado = doctores.find((doc) => doc.nombre === "Dr. Ana Pérez");
     console.log(encontrado);
 
@@ -93,3 +93,73 @@ fetch("listado-doctores.json")
   .catch((error) => {
     console.error("Error al cargar el archivo JSON:", error);
   });
+
+// Laboratorio 2
+const calcularCosto = (precioConsulta) => (numeroConsultas) =>
+  precioConsulta * numeroConsultas;
+
+const costoConsulta = calcularCosto(12990); // Precio de cada consulta
+const costoTotal = costoConsulta(5); // Número de consultas realizadas
+
+// Formatear el resultado en formato CLP (Pesos Chilenos)
+const costoTotalFormateado = costoTotal.toLocaleString("es-CL", {
+  style: "currency",
+  currency: "CLP",
+});
+
+console.log(`El costo total de las consultas es: ${costoTotalFormateado}`);
+
+const calcularPromedioEspera = (tiemposEspera) => {
+  const promedioMinutos =
+    tiemposEspera.reduce((acc, tiempo) => acc + tiempo, 0) /
+    tiemposEspera.length;
+  const horas = Math.floor(promedioMinutos / 60);
+  const minutos = Math.round(promedioMinutos % 60);
+  return `Tiempo de espera: ${horas} horas y ${minutos} minutos`;
+};
+
+console.log(calcularPromedioEspera([15, 20, 30])); // Salida: "0 horas y 22 minutos"
+
+const calcularHorasTotales = (horas, index = 0) => {
+  if (index === horas.length) return 0;
+  return horas[index] + calcularHorasTotales(horas, index + 1);
+};
+console.log(calcularHorasTotales([3, 4, 5, 2]));
+
+const aplicarDescuento = (costo) => (descuento) => costo - costo * descuento;
+const calcularCostoConDescuento = (costo) => aplicarDescuento(costo)(0.1);
+console.log(calcularCostoConDescuento(150000));
+
+class Doctor {
+  constructor(nombre, especialidad, experiencia) {
+    this.nombre = nombre;
+    this.especialidad = especialidad;
+    this._experiencia = experiencia;
+  }
+  get experiencia() {
+    return this._experiencia;
+  }
+  set experiencia(valor) {
+    if (valor < 0) throw new Error("La experiencia no puede ser negativa.");
+    this._experiencia = valor;
+  }
+  mostrarInformacion() {
+    return `Doctor ${this.nombre}, Especialidad: ${this.especialidad}, Experiencia:
+ ${this.experiencia} años.`;
+  }
+}
+
+//  Polimorfismo
+class Cirujano extends Doctor {
+  constructor(nombre, especialidad, experiencia, operaciones) {
+    super(nombre, especialidad, experiencia);
+    this.operaciones = operaciones;
+  }
+  mostrarInformacion() {
+    return `Cirujano ${this.nombre}, Especialidad: ${this.especialidad}, Operaciones:
+ ${this.operaciones}.`;
+  }
+}
+
+const cirujano = new Cirujano("Carlos", "Cardiología", 10, 50);
+console.log(cirujano.mostrarInformacion());
