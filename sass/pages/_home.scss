@@ -1,6 +1,33 @@
 @import "../abstracts/mixins";
 @import "../layout/container";
 
+.hr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin: 20px 0;
+  position: relative;
+
+  @include mobile() {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .line {
+    flex-grow: 1;
+    height: 2px;
+    background-color: #000;
+    margin-left: 10px;
+
+    @include mobile() {
+      width: 80%;
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+}
+
 .bienvenida {
   display: flex;
   margin: 120px 0 20px;
@@ -9,7 +36,6 @@
     .bienvenida__titulo {
       font-size: 36px;
       text-transform: uppercase;
-      border-bottom: 2px solid #007bff;
 
       @include mobile() {
         font-size: 26px;
@@ -45,7 +71,6 @@
   .nuestro-equipo__titulo {
     font-size: 36px;
     text-transform: uppercase;
-    border-bottom: 2px solid #007bff;
   }
 
   .nuestro-equipo__infor {
@@ -56,10 +81,20 @@
 .servicios__titulo {
   font-size: 36px;
   text-transform: uppercase;
-  border-bottom: 2px solid #007bff;
 }
 
 .servicios {
+  .servicios__titulo {
+    padding: 0 10px;
+    font-size: 36px;
+    white-space: nowrap;
+
+    @include mobile() {
+      font-size: 26px;
+      padding: 0;
+    }
+  }
+
   .row {
     gap: 50px;
 
@@ -76,6 +111,7 @@
 
       @include mobile() {
         flex-direction: column;
+        margin: 15px 0;
 
         &.servicios__infor:nth-child(2) {
           flex-wrap: wrap;

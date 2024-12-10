@@ -24215,6 +24215,34 @@ textarea.form-control-lg {
   margin: 0;
 }
 
+.hr {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  margin: 20px 0;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .hr {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.hr .line {
+  flex-grow: 1;
+  height: 2px;
+  background-color: #000;
+  margin-left: 10px;
+}
+@media (max-width: 767px) {
+  .hr .line {
+    width: 80%;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
 .bienvenida {
   display: flex;
   margin: 120px 0 20px;
@@ -24222,7 +24250,6 @@ textarea.form-control-lg {
 .bienvenida .bienvenida__encabezado .bienvenida__titulo {
   font-size: 36px;
   text-transform: uppercase;
-  border-bottom: 2px solid #007bff;
 }
 @media (max-width: 767px) {
   .bienvenida .bienvenida__encabezado .bienvenida__titulo {
@@ -24254,7 +24281,6 @@ textarea.form-control-lg {
 .nuestro-equipo .nuestro-equipo__titulo {
   font-size: 36px;
   text-transform: uppercase;
-  border-bottom: 2px solid #007bff;
 }
 .nuestro-equipo .nuestro-equipo__infor {
   font-size: 21px;
@@ -24263,9 +24289,19 @@ textarea.form-control-lg {
 .servicios__titulo {
   font-size: 36px;
   text-transform: uppercase;
-  border-bottom: 2px solid #007bff;
 }
 
+.servicios .servicios__titulo {
+  padding: 0 10px;
+  font-size: 36px;
+  white-space: nowrap;
+}
+@media (max-width: 767px) {
+  .servicios .servicios__titulo {
+    font-size: 26px;
+    padding: 0;
+  }
+}
 .servicios .row {
   gap: 50px;
 }
@@ -24282,6 +24318,7 @@ textarea.form-control-lg {
 @media (max-width: 767px) {
   .servicios .row .servicios__infor {
     flex-direction: column;
+    margin: 15px 0;
   }
   .servicios .row .servicios__infor.servicios__infor:nth-child(2) {
     flex-wrap: wrap;
